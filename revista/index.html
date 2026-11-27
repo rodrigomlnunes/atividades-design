@@ -1,0 +1,441 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Projeto autoral de revista: sete etapas, 28 páginas e dez publicidades. Senac Design Gráfico · UC7."><meta name="theme-color" content="#111111"><title>Revista — Laboratório editorial · UC7</title><style>
+:root{--paper:#f3f2ee;--ink:#111;--muted:#a5a5a5;--red:#e22128;--rail:210px;--pad:clamp(24px,5vw,86px);font-family:Arial,Helvetica,sans-serif;color:var(--paper);background:var(--ink);font-synthesis:none;color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}button,a,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:5px}button{color:inherit}::selection{background:var(--red);color:white}img{max-width:100%;display:block}h1,h2,h3,p{margin:0}p{line-height:1.55}h1,h2,h3{letter-spacing:-.055em;line-height:.97}h2{font-size:clamp(48px,6.3vw,105px)}h3{font-size:clamp(30px,3vw,49px)}.label{font-size:14px;text-transform:uppercase;letter-spacing:.13em;line-height:1.5}.red{color:var(--red)}.thin{font-weight:300}.measure{max-width:680px}.section{padding:100px var(--pad);scroll-margin-top:30px}.paper{background:var(--paper);color:var(--ink);color-scheme:light}.line{border-top:1px solid #ffffff2b}.paper .line{border-color:#1113}.lede{font-size:clamp(20px,2vw,29px);font-weight:300;line-height:1.4}.section-head{display:flex;justify-content:space-between;gap:35px;align-items:end;margin:28px 0 55px}.section-head p{max-width:370px;font-size:18px}.btn{border:1px solid currentColor;background:transparent;padding:13px 19px;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:10px;text-transform:uppercase;letter-spacing:.07em}.btn:hover{background:var(--red);border-color:var(--red);color:#fff}.btn.solid{background:var(--red);border-color:var(--red);color:white}.actions{display:flex;gap:12px;flex-wrap:wrap}.rail{position:fixed;inset:0 auto 0 0;width:var(--rail);padding:30px 24px;background:#0c0c0c;z-index:50;border-right:1px solid #fff2;display:flex;flex-direction:column}.wordmark{font-size:24px;font-weight:900;letter-spacing:-.07em}.wordmark b{color:var(--red)}.rail .course{font-size:14px;color:#b0b0b0;line-height:1.5;margin:20px 0 38px}.rail nav{display:grid;gap:4px}.rail nav a{color:#8d8d8d;padding:11px 0;font-size:15px;transition:color .2s}.rail nav a.active,.rail nav a:hover{color:white}.rail nav a.active:before{content:'';display:inline-block;background:var(--red);width:15px;height:3px;margin:0 8px 4px 0}.rail-foot{margin-top:auto;font-size:14px;color:#aaa;line-height:1.6}.rail-foot button{display:block;margin-top:18px;background:none;border:1px solid #555;padding:10px;text-align:left;font-size:14px}.progress{position:fixed;top:0;left:var(--rail);right:0;height:3px;z-index:70;background:#333}.progress i{display:block;width:100%;height:100%;background:var(--red);transform:scaleX(0);transform-origin:left}main{margin-left:var(--rail)}.mobile,.mobile-menu{display:none}.hero{position:relative;min-height:100svh;overflow:hidden;display:grid;grid-template-columns:1.03fr 1fr;align-items:center;background:#090909}.hero-copy{padding:75px 0 75px var(--pad);position:relative;z-index:2}.hero h1{font-size:clamp(90px,12vw,205px);letter-spacing:-.09em;margin:35px 0}.hero h1 span{display:block}.hero h1 span:last-child{-webkit-text-stroke:1px var(--paper);color:transparent}.hero .lede{max-width:440px;font-size:clamp(20px,2vw,29px)}.hero .actions{margin-top:34px}.hero-photo{position:relative;height:100%;min-height:100svh;align-self:stretch;overflow:hidden}.hero-photo img{height:100%;width:100%;object-fit:cover;object-position:48% top;filter:grayscale(1);opacity:.85}.hero-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#090909 0%,transparent 25%),linear-gradient(0deg,#090909 0%,transparent 30%);pointer-events:none}.eye-band{position:absolute;top:17%;left:3%;right:12%;height:6.5%;background:#d71920;mix-blend-mode:multiply;z-index:1}.hero-caption{position:absolute;bottom:40px;right:30px;z-index:2;max-width:250px}.hero-caption strong{display:block;font-size:19px;margin-bottom:7px}.hero-caption span{font-size:14px;color:#bbb}.scroll-hint{position:absolute;bottom:25px;left:var(--pad);font-size:14px;color:#aaa}.scroll-hint:before{content:'';display:inline-block;width:34px;height:1px;background:var(--red);margin:0 12px 4px 0}.manifest{height:210vh;position:relative;background:var(--red)}.manifest-pin{height:100svh;position:sticky;top:0;display:flex;justify-content:center;flex-direction:column;padding:var(--pad)}.manifest p{font-size:clamp(40px,5vw,90px);font-weight:800;line-height:1.04;letter-spacing:-.055em;margin-top:35px;max-width:1100px}.manifest .word{color:#650b104f;transition:color .12s}.manifest .word.on{color:var(--paper)}.manifest .sub{font-size:18px;max-width:600px;line-height:1.5;font-weight:400;letter-spacing:0;margin-top:35px;color:white}.question-section{padding-bottom:0}.question-intro{padding:0 var(--pad)}.question-wrap{position:relative}.question-pin{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center}.question-track{display:flex;width:max-content;will-change:transform;padding:40px var(--pad);gap:0}.question-panel{width:min(660px,70vw);padding:10px 65px 20px 0;margin-right:65px;border-right:1px solid #1113;min-height:330px}.question-panel h3{max-width:520px;margin:24px 0 35px}.question-panel ul{padding-left:22px;font-size:20px;line-height:1.65;margin:0}.question-panel li{padding-left:5px;margin:10px 0}.question-panel .key{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}.track-status{padding:0 var(--pad);font-size:14px;color:#555}.track-bar{height:2px;background:#1112;margin:15px var(--pad)}.track-bar i{display:block;height:100%;background:var(--red);width:20%;transition:width .1s}.text-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;margin-top:65px}.text-grid .intro{font-size:22px;margin-top:26px;max-width:430px}.paragraphs{display:grid;gap:0}.paragraph{padding:26px 0;border-top:1px solid #fff3;display:grid;grid-template-columns:60px 1fr;gap:15px}.paragraph b{font-size:35px;letter-spacing:-.05em;color:var(--red)}.paragraph h3{font-size:27px;margin-bottom:14px}.paragraph p{font-size:18px;color:#ccc}.copy-tip{font-size:18px;border-left:3px solid var(--red);padding-left:22px;margin-top:32px;color:#ccc}.process{position:relative;background:#171717}.process-pin{position:sticky;top:0;min-height:100svh;padding:50px var(--pad);display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.process-title h2{margin:25px 0;font-size:clamp(36px,3.4vw,64px)}.process-title p{font-size:19px;color:#bbb;max-width:440px}.stage-labels{display:grid;gap:4px;margin-top:30px}.stage-labels button{padding:13px 0;border:0;border-bottom:1px solid #fff2;background:transparent;text-align:left;color:#737373;font-size:19px}.stage-labels button.active{color:white}.stage-labels button.active:before{content:'';display:inline-block;width:20px;height:3px;background:var(--red);margin:0 12px 5px 0}.stage-view{position:relative;min-height:460px}.stage{position:absolute;inset:0;opacity:0;transform:translateY(35px);transition:opacity .4s,transform .4s;pointer-events:none;display:flex;flex-direction:column;justify-content:center}.stage.active{opacity:1;transform:none;pointer-events:auto}.stage .app{font-size:14px;letter-spacing:.1em;color:var(--red);margin-bottom:20px;text-transform:uppercase}.stage h3{font-size:clamp(35px,4vw,64px);margin-bottom:26px}.stage p{font-size:20px;color:#ddd;max-width:530px}.stage ul{padding-left:20px;font-size:18px;line-height:1.6}.stage .deliver{border-top:1px solid #fff3;margin-top:30px;padding-top:20px;font-size:16px;color:#aaa}.studio-shape{position:absolute;inset:-30px -20px;pointer-events:none;opacity:.12;border:1px solid white;transform:rotate(-4deg)}.example-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start;margin-top:55px}.example-copy p{font-size:20px;margin-top:26px}.example-copy .actions{margin-top:30px}.spec{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:35px;padding-top:25px;border-top:1px solid #1113}.spec span{font-size:15px;color:#555;display:block;margin-top:8px}.spec strong{font-size:21px}.compare{position:relative;width:100%;aspect-ratio:1122/1402;background:#111;overflow:hidden;--split:50%}.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.compare .before{clip-path:inset(0 calc(100% - var(--split)) 0 0)}.compare .divider{position:absolute;top:0;bottom:0;left:var(--split);width:2px;background:white;pointer-events:none}.compare .handle{position:absolute;left:var(--split);top:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:var(--red);display:grid;place-items:center;color:white;font-size:27px;border:2px solid white;pointer-events:none}.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}.compare:focus-within{outline:3px solid var(--red);outline-offset:5px}.compare-tags{position:absolute;inset:18px 18px auto;display:flex;justify-content:space-between;pointer-events:none}.compare-tags span{background:#111;color:#fff;font-size:13px;padding:8px 12px;text-transform:uppercase;letter-spacing:.08em}.compare-tags span:last-child{background:var(--red)}.compare-note{font-size:14px;color:#555;margin-top:15px}.mockup-section{overflow:hidden;background:#202020}.mockup-section .section-head{align-items:start}.mockup-section .section-head p{color:#ccc}.mockup-scene{perspective:1600px;padding:45px 20px 100px;display:flex;justify-content:center}.magazine{width:min(900px,95%);aspect-ratio:1.6;display:grid;grid-template-columns:1fr 1fr;transform:rotateX(12deg) rotateZ(-7deg);box-shadow:0 55px 55px #0009,0 3px 0 #aaa,0 7px 0 #ddd;transition:transform .6s;position:relative}.magazine:hover{transform:rotateX(0deg) rotateZ(-2deg)}.mag-page{background:var(--paper);color:#111;position:relative;overflow:hidden}.mag-page.left{padding:10% 9%;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid #555}.mag-page.left:after{content:'';position:absolute;right:0;top:0;bottom:0;width:30px;background:linear-gradient(90deg,transparent,#0003)}.mag-page.left .tiny{font-size:clamp(9px,1.1vw,14px);letter-spacing:.1em;text-transform:uppercase}.mag-page.left h3{font-size:clamp(35px,5vw,68px);line-height:.95}.mag-page.left h3 i{color:var(--red);font-style:normal}.mag-page.left p{font-size:clamp(12px,1.4vw,18px);max-width:270px}.mag-page.right img{width:100%;height:100%;object-fit:cover}.mag-page.right:after{content:'';position:absolute;left:0;top:0;bottom:0;width:20px;background:linear-gradient(90deg,#0004,transparent)}.components{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.component{padding:24px 0;border-top:1px solid #fff3}.component h3{font-size:24px;margin-bottom:14px}.component p{font-size:17px;color:#ccc}.lab{background:var(--paper);color:#111;color-scheme:light}.lab-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:45px}.lab label{font-size:14px;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:12px}.lab input[type=text],.lab textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #1116;border-radius:0;color:#111;padding:15px 0;font-size:21px;resize:vertical}.lab textarea{border:1px solid #1115;padding:20px;min-height:280px;margin-top:5px;font-size:18px;line-height:1.6}.lab .field{margin-bottom:25px}.count-row{display:flex;justify-content:space-between;gap:15px;font-size:14px;color:#555;margin:15px 0 25px}.count-row [data-valid=true]{color:#15643a}.count-row [data-valid=false]{color:#9a171b}.saved-note{font-size:14px;color:#555;max-width:430px;margin-top:20px}.checklist{margin-top:25px;display:grid}.checklist label{display:flex;gap:14px;font-size:18px;line-height:1.5;text-transform:none;letter-spacing:0;cursor:pointer;padding:14px 0;margin:0;border-bottom:1px solid #1112}.checklist input{accent-color:var(--red);width:20px;height:20px;flex-shrink:0;margin-top:4px}.delivery{margin-top:40px;padding:25px;border:1px solid #1115}.delivery h3{font-size:28px;margin-bottom:18px}.delivery p{font-size:18px}.closing{min-height:85svh;background:var(--red);display:flex;flex-direction:column;justify-content:center}.closing h2{font-size:clamp(65px,9vw,150px);max-width:1000px;margin:30px 0}.closing p{font-size:22px;max-width:600px}.closing .actions{margin-top:40px}.footer{padding:30px var(--pad);font-size:14px;display:flex;justify-content:space-between;gap:25px;color:#aaa}.reveal-up{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}.reveal-up.shown{opacity:1;transform:none}.lightbox{width:min(1100px,96vw);max-height:94svh;background:#0a0a0a;color:#fff;border:1px solid #555;padding:18px;position:fixed}.lightbox::backdrop{background:#000d;backdrop-filter:blur(8px)}.lightbox-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 0 16px}.lightbox-bar button{padding:10px 15px;border:1px solid #aaa;background:none}.lightbox-scroll{height:75svh;overflow:auto}.lightbox-scroll img{width:min(100%,780px);margin:auto;max-width:none}.lightbox-scroll.zoomed img{width:1500px}.toast{position:fixed;bottom:25px;left:calc(50% + 70px);transform:translateX(-50%);background:var(--paper);color:#111;border-left:5px solid var(--red);padding:16px 24px;font-size:16px;z-index:100;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}.no-motion html{scroll-behavior:auto}body.no-motion .reveal-up{opacity:1;transform:none}body.no-motion .manifest{height:auto}body.no-motion .manifest-pin{position:static;min-height:80svh;height:auto;padding-block:100px}body.no-motion .manifest .word{color:white}body.no-motion .question-wrap{height:auto!important}body.no-motion .question-pin{position:static;height:auto}body.no-motion .question-track{width:auto;transform:none!important;display:grid;padding:40px var(--pad)}body.no-motion .question-panel{width:auto;min-height:0;padding:30px 0;margin:0;border-right:0;border-bottom:1px solid #1113}body.no-motion .process{height:auto!important}body.no-motion .process-pin{position:static;display:block;min-height:0}body.no-motion .stage-labels{display:none}body.no-motion .stage-view{min-height:0}body.no-motion .stage{position:static;opacity:1;transform:none;pointer-events:auto;margin-top:65px}body.no-motion .studio-shape{display:none}body.no-motion *,body.no-motion *:before,body.no-motion *:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+@media(min-width:1700px){.hero-photo img{object-position:center 24%}.hero h1{font-size:210px}}
+@media(max-width:1100px){:root{--rail:170px;--pad:32px}.rail{padding:25px 18px}.hero h1{font-size:120px}.hero{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:30px;max-width:650px}.text-grid,.example-grid,.lab-grid{gap:35px}.process-pin{gap:30px}.components{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){:root{--rail:0px;--pad:24px}.rail{display:none}.mobile{display:flex;position:fixed;inset:0 0 auto;background:#0c0c0c;z-index:60;height:58px;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid #fff3}.mobile button{background:none;border:1px solid #555;font-size:14px;padding:7px 10px}.mobile-menu{display:none;position:fixed;top:58px;inset-inline:0;background:#111;padding:20px;z-index:59}.mobile-menu.open{display:grid;grid-template-columns:1fr 1fr;gap:20px}.progress{top:58px}.hero{min-height:100svh;grid-template-columns:1fr;padding-top:58px}.hero-copy{padding:55px 24px 55px;z-index:3;max-width:95%}.hero h1{font-size:clamp(90px,24vw,155px);margin:30px 0}.hero .lede{max-width:330px;text-shadow:0 2px 20px #000}.hero-photo{position:absolute;inset:58px 0 0 30%;min-height:0;opacity:.5}.hero-photo img{object-position:45% top}.hero-photo:after{background:linear-gradient(90deg,#090909 0%,transparent 100%),linear-gradient(0deg,#090909,transparent)}.hero-caption{display:none}.scroll-hint{display:none}.section{padding:75px var(--pad);scroll-margin-top:58px}.manifest-pin{top:58px;height:calc(100svh - 58px)}.manifest p{font-size:clamp(38px,8.8vw,64px)}.section-head{margin-bottom:35px}.section-head p{font-size:18px}.question-section{padding-bottom:0}.question-wrap{height:auto!important}.question-pin{position:static;height:auto}.question-track{width:auto;transform:none!important;display:grid;padding-block:20px}.question-panel{width:auto;min-height:0;border:0;border-top:1px solid #1113;margin:0;padding:30px 0}.question-panel h3{margin:15px 0 20px}.question-panel ul{font-size:18px}.track-status,.track-bar{display:none}.text-grid,.example-grid,.lab-grid{grid-template-columns:1fr;gap:40px;margin-top:35px}.process{height:auto!important}.process-pin{position:static;display:block;padding:75px var(--pad);min-height:0}.stage-labels{display:none}.stage-view{min-height:0}.stage{position:static;opacity:1;transform:none;pointer-events:auto;margin-top:50px;padding-top:30px;border-top:1px solid #fff3}.studio-shape{display:none}.stage h3{font-size:37px}.components{grid-template-columns:1fr;gap:10px}.example-copy{order:0}.compare{max-width:600px}.magazine{width:100%;transform:rotateZ(-4deg)}.mockup-scene{padding:20px 0 65px}.mag-page.left .tiny{font-size:9px}.mag-page.left p{font-size:11px}.mag-page.left h3{font-size:30px}.mag-page.left p{display:none}.paragraph{grid-template-columns:45px 1fr}.footer{flex-direction:column}.toast{left:50%;width:90%}.closing{min-height:75svh}.lightbox{padding:12px}.lightbox-bar{flex-wrap:wrap}.lightbox-bar span{font-size:14px}.lightbox-scroll{height:70svh}}
+@media print{.rail,.mobile,.mobile-menu,.progress,.actions,.toast,.scroll-hint,.track-status,.track-bar,.lightbox{display:none!important}main{margin:0}*{animation:none!important;transition:none!important}body{background:white;color:black}.hero{min-height:0;height:700px}.section{padding:40px}.manifest,.question-wrap,.process{height:auto!important}.manifest-pin,.question-pin,.process-pin{position:static;height:auto;min-height:0}.manifest-pin{padding:40px}.manifest .word{color:white!important}.question-track{display:block;transform:none!important;width:auto;padding:25px}.question-panel{width:auto;min-height:0;padding:20px;margin:0;break-inside:avoid}.stage{position:static;opacity:1;transform:none;margin-top:30px;break-inside:avoid}.stage-view{min-height:0}.stage-labels{display:none}.reveal-up{opacity:1;transform:none}.mockup-scene{padding:15px}.magazine{transform:none}.section-head h2{font-size:50px}.closing{min-height:0;padding:40px}.lab-grid{display:block}.checklist{break-inside:avoid}.compare input{display:none}}
+
+:root{--paper:#f3f2ee;--rail:235px}.rail{width:var(--rail)}.rail nav a{display:flex;gap:10px;font-size:14px;line-height:1.3;padding:10px 0}.rail nav a span{color:var(--red);font-variant-numeric:tabular-nums}.rail nav a.active:before{display:none}.rail .course{margin-bottom:20px}.hero{grid-template-columns:1.1fr 1fr;min-height:100svh}.hero h1{font-size:clamp(85px,10vw,180px);margin:25px 0}.hero-art{height:100%;min-height:95svh;display:grid;place-items:center;position:relative;background:radial-gradient(ellipse at center,#383838,#090909 70%)}.hero-book{width:65%;aspect-ratio:.72;background:var(--paper);color:#111;transform:perspective(1000px) rotateY(-20deg) rotateZ(8deg);box-shadow:20px 35px 50px #000a,5px 0 #b8b8b8,9px 0 #ddd;padding:8%;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.hero-book strong{font-size:clamp(55px,6vw,105px);line-height:.8;letter-spacing:-.09em;z-index:1}.hero-book .red-square{height:45%;position:absolute;inset:30% -20% auto 20%;background:var(--red);transform:rotate(-15deg)}.hero-book p{z-index:1;font-size:20px;font-weight:700}.hero-book small{font-size:14px;z-index:1}.hero .lede{font-size:23px}.hero-art .side-label{position:absolute;right:20px;writing-mode:vertical-rl;font-size:14px;letter-spacing:.15em}.metrics{display:flex;gap:30px;margin:35px 0}.metrics b{font-size:42px;letter-spacing:-.07em}.metrics span{display:block;font-size:14px;color:#aaa}.journey-list{margin-top:55px}.journey-list a{display:grid;grid-template-columns:60px 1fr 150px;gap:20px;align-items:center;padding:26px 0;border-top:1px solid #1113;transition:padding .25s,color .25s}.journey-list a:hover{padding-inline:15px;color:var(--red)}.journey-list strong{font-size:clamp(24px,3vw,42px);letter-spacing:-.045em}.journey-list small{font-size:14px}.continuous{padding:35px;border:1px solid #1114;margin-top:40px;display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.continuous h3{font-size:35px}.continuous p{font-size:19px}.chapter{padding:85px var(--pad);scroll-margin-top:20px}.chapter-head{display:grid;grid-template-columns:110px 1fr;gap:30px;margin-bottom:70px}.chapter-number{font-size:90px;letter-spacing:-.09em;color:var(--red);font-weight:800;line-height:1}.chapter h2{font-size:clamp(45px,5.4vw,85px);max-width:1000px;margin:22px 0 30px}.chapter-head .lede{max-width:850px;font-size:23px}.chapter-body{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px}.sticky-note{position:sticky;top:40px;align-self:start}.sticky-note h3{margin:25px 0;font-size:40px}.sticky-note p{font-size:18px;max-width:290px;margin-bottom:28px;opacity:.75}.instruction{padding:28px 0 35px;border-top:1px solid #8886}.step-label{font-size:14px;color:var(--red);letter-spacing:.1em}.instruction h3{font-size:30px;letter-spacing:-.04em;line-height:1.07;margin:20px 0}.instruction ul,.delivery-block ul{padding-left:20px;font-size:18px;line-height:1.65}.instruction li,.delivery-block li{margin:12px 0;padding-left:5px}.delivery-block{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px;border:1px solid #8886;padding:35px;margin-top:50px;scroll-margin-top:40px}.delivery-block h3{font-size:36px;margin-top:20px}.delivery-block ul{margin-top:0}.criteria{border-top:1px solid #8886;padding-top:20px;margin-top:25px;font-size:17px}.completion{display:flex;gap:12px;align-items:start;line-height:1.5;font-size:16px;margin-top:25px}.completion input{width:20px;height:20px;accent-color:var(--red);flex-shrink:0}.chapter-end{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #8886;padding:35px 0;font-size:14px}.demo-head{display:flex;gap:35px;align-items:center;justify-content:space-between;margin-bottom:30px}.demo-head h3{font-size:36px}.demo-head p{font-size:17px;max-width:380px}.map-demo,.grid-demo,.type-demo,.digital-demo{margin:0 0 70px;padding:35px;border:1px solid #8886}.page-map{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.page-tile{aspect-ratio:.72;border:1px solid #8887;display:flex;flex-direction:column;justify-content:space-between;padding:12px;background:#f3f2ee;color:#111}.page-tile b{font-size:25px}.page-tile span{font-size:12px}.page-tile.ad{background:var(--red);color:#fff;border-color:var(--red)}.caption{font-size:14px;opacity:.7;line-height:1.6;margin-top:22px}.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}.samples figure{margin:0}.samples figcaption{font-size:15px;margin-top:12px}.spread{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:1.5;box-shadow:0 8px 16px #0002}.leaf{background:#f3f2ee;color:#111;padding:8%;border:1px solid #1112;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:8px}.leaf b{font-size:clamp(13px,1.5vw,24px);letter-spacing:-.05em;line-height:1}.leaf i{display:block;background:var(--red);min-height:32%;flex:1}.leaf em{display:block;height:25%;background:repeating-linear-gradient(0deg,transparent 0 3px,#1118 3px 4px);width:100%}.leaf small{font-size:9px;position:absolute;bottom:6px}.leaf:nth-child(2){box-shadow:inset 10px 0 10px -12px #111}.s2 .leaf{display:grid;grid-template-columns:1fr 1fr}.s2 .leaf b{grid-column:span 2}.s2 .leaf i{height:35px}.s3 .leaf:first-child i{position:absolute;inset:0}.s3 .leaf:first-child b{z-index:1;color:white}.s4 .leaf{display:grid;grid-template-columns:1fr 1fr}.s4 .leaf i{grid-column:span 2}.s5 .leaf:first-child{background:var(--red);color:white;justify-content:center}.s5 .leaf:first-child b{font-size:30px}.s5 .leaf:first-child i,.s5 .leaf:first-child em{display:none}.s6 .leaf:first-child i{transform:translateX(25%);width:120%}.s6 .leaf:last-child i{flex:0;min-height:20%;width:60%;align-self:end}.guides .leaf:after{content:'';position:absolute;inset:8%;background:repeating-linear-gradient(90deg,#008aaf40 0 calc(16.666% - 3px),transparent calc(16.666% - 3px) 16.666%),repeating-linear-gradient(0deg,transparent 0 calc(20% - 1px),#008aaf 20%);border:1px solid #008aaf;pointer-events:none}.type-preview{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;margin:30px 0}.type-preview h3{font-size:clamp(40px,5vw,72px);line-height:.95}.type-preview p{font-size:19px}.type-preview blockquote{grid-column:span 2;margin:0;padding:25px 0;border-block:1px solid #8886;font-size:28px;color:var(--red)}.type-demo input{width:100%;accent-color:var(--red);margin:20px 0}.cover-demo{background:#e22128;color:white;padding:10%;display:flex;flex-direction:column;justify-content:space-between}.cover-demo span{font-size:12px}.cover-demo strong{font-size:clamp(40px,6vw,90px);line-height:.8;letter-spacing:-.07em}.cover-demo div{height:10px;background:#111;width:50%}.cover-demo p{font-size:18px}.proof-flow{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;padding:40px 0 65px;font-size:clamp(22px,3vw,42px);font-weight:800;letter-spacing:-.04em}.proof-flow b{color:#777}.digital-demo h3{font-size:clamp(35px,5vw,65px);margin:25px 0}.save-note{font-size:14px;opacity:.7;margin-top:20px}.footer a{text-decoration:underline}@media(max-width:1100px){:root{--rail:200px}.chapter-head{grid-template-columns:75px 1fr;gap:20px}.chapter-number{font-size:65px}.chapter-body,.delivery-block{gap:30px;grid-template-columns:.6fr 1.4fr}.hero h1{font-size:100px}.page-map{grid-template-columns:repeat(7,1fr)}.page-tile{padding:7px}.page-tile span{font-size:10px}}@media(max-width:760px){:root{--rail:0px}.hero{display:block;padding-top:58px}.hero-copy{padding:55px 24px 20px}.hero h1{font-size:clamp(85px,21vw,150px)}.hero-art{min-height:420px;height:55svh}.hero-book{width:220px;padding:30px}.hero-book strong{font-size:80px}.hero-book p{font-size:18px}.hero-art .side-label{right:25px}.metrics{margin:25px 0}.chapter{padding:65px 24px;scroll-margin-top:58px}.chapter-head{display:block;margin-bottom:40px}.chapter-number{font-size:64px;display:block;margin-bottom:25px}.chapter-head .lede{font-size:20px}.chapter-body,.delivery-block{display:block}.sticky-note{position:static;margin-bottom:35px}.sticky-note h3{display:none}.sticky-note p{max-width:none;margin-top:15px}.sticky-note .btn{display:none}.delivery-block{padding:24px}.delivery-block ul{margin-top:25px}.journey-list a{grid-template-columns:35px 1fr;gap:10px}.journey-list small{display:none}.continuous{display:block;padding:25px}.continuous p{margin-top:20px}.demo-head{display:block}.demo-head .btn,.demo-head p{margin-top:20px}.map-demo,.grid-demo,.type-demo,.digital-demo{padding:20px;margin-bottom:40px}.page-map{grid-template-columns:repeat(4,1fr);gap:7px}.page-tile span{font-size:10px}.samples{grid-template-columns:1fr;gap:25px}.leaf b{font-size:22px}.type-preview{display:block}.type-preview p{margin:25px 0}.type-preview blockquote{font-size:24px}.mobile-menu.open{display:flex;flex-direction:column;gap:16px;max-height:calc(100svh - 58px);overflow:auto}.mobile-menu a{font-size:16px}.mobile-menu a span{color:var(--red);margin-right:8px}.chapter-end{gap:15px}.chapter-end .btn{font-size:12px}.hero .lede{font-size:21px}}body.no-motion .sticky-note{position:static}body.no-motion .hero-book,body.no-motion .magazine{transform:none!important}@media print{.hero-art{display:none}.hero{height:auto;display:block}.hero-copy{padding:35px}.hero h1{font-size:90px}.chapter{break-before:page;padding:30px;background:white;color:black}.chapter-head{margin-bottom:25px}.chapter-body,.delivery-block{display:block}.sticky-note{display:none}.chapter-number{font-size:50px}.chapter h2{font-size:40px}.instruction,.delivery-block{break-inside:avoid}.map-demo,.grid-demo,.type-demo,.digital-demo{break-inside:avoid}.completion,.chapter-end,.chapter-end .btn,.save-note{display:none}.instruction h3{font-size:24px}.instruction ul,.delivery-block ul{font-size:12pt}.samples{grid-template-columns:1fr 1fr}.manifest{display:none}.closing{display:none}.journey-list strong{font-size:22px}.progress{display:none}}
+@media(max-width:760px){.hero-book{min-height:310px;aspect-ratio:auto}.hero-book strong{font-size:65px}.hero-book p{font-size:16px}.hero-book small{font-size:11px}.hero-book .red-square{height:37%}.mobile .wordmark{font-size:22px}.mobile button[data-motion]{font-size:12px;padding:7px}}
+@media(max-width:760px){.hero h1{font-size:clamp(60px,18vw,130px)}}
+</style></head><body>
+<a href="#jornada" class="btn" style="position:absolute;left:-9999px" onfocus="this.style.left='20px';this.style.zIndex=100" onblur="this.style.left='-9999px'">Pular para o conteúdo</a>
+<aside class="rail"><a class="wordmark" href="#inicio">re<b>vista.</b></a><div class="course">Senac · Design Gráfico<br>UC7 · Laboratório editorial</div><nav id="chapters" aria-label="Etapas do projeto"></nav><div class="rail-foot">Rodrigo de Magalhães<button data-motion aria-pressed="false">Reduzir movimento</button></div></aside>
+<header class="mobile"><a class="wordmark" href="#inicio">re<b>vista.</b></a><button id="menuButton" aria-expanded="false" aria-controls="mobileMenu">Etapas</button><button data-motion aria-pressed="false">Reduzir movimento</button></header><nav id="mobileMenu" class="mobile-menu" aria-label="Etapas no celular"></nav><div class="progress" aria-hidden="true"><i id="progressFill"></i></div>
+<main><section id="inicio" class="hero" data-nav><div class="hero-copy"><p class="label red">Projeto final · Design editorial</p><h1><span>SUA</span><span>REVISTA.</span></h1><p class="lede">Uma ideia ganha páginas.<br>Seu olhar vira publicação.</p><div class="metrics"><div><b>28</b><span>páginas</span></div><div><b>10</b><span>publicidades</span></div><div><b>07</b><span>etapas</span></div></div><div class="actions"><a class="btn solid" href="#jornada">Explorar o projeto</a></div></div><div class="hero-art" aria-label="Mockup ilustrativo de capa de revista"><div class="hero-book"><small>LABORATÓRIO EDITORIAL · UC7</small><strong>REV<br>ISTA.</strong><div class="red-square"></div><p>O mundo<br>pelo seu olhar.</p><small>EDIÇÃO AUTORAL · DESIGN GRÁFICO</small></div><span class="side-label">TEMA · PÚBLICO · IDENTIDADE · EXPERIÊNCIA</span></div></section>
+<section id="proposta" class="manifest"><div class="manifest-pin"><span class="label">O desafio</span><p id="manifestText">Não basta preencher páginas. Uma revista conecta ideias, cria ritmo e transforma conteúdo em uma experiência de leitura.</p><p class="sub">Você irá pesquisar, escrever, fotografar, tratar imagens, criar publicidades, diagramar, revisar e preparar sua publicação para o papel e para a tela.</p></div></section>
+<section id="jornada" class="section paper" data-nav><p class="label red">O percurso completo</p><div class="section-head"><h2>Sete etapas.<br>Uma edição autoral.</h2><p>Consulte os roteiros, desenvolva as entregas e valide as decisões com o professor. A revista será construída progressivamente.</p></div><div id="journeyList" class="journey-list"></div><div class="continuous"><h3>Produção desde<br>o primeiro dia.</h3><p><strong>Textos, imagens e publicidades atravessam todas as etapas.</strong> Os exercícios realizados nas aulas com Illustrator e Photoshop poderão integrar as dez publicidades. O InDesign reúne e organiza a edição por meio de arquivos vinculados.</p></div></section>
+<div id="parts"></div>
+<section id="final" class="section closing"><p class="label">Projeto final · UC7</p><h2>Seu olhar.<br>Sua edição.<br>Sua autoria.</h2><p>Apresente as escolhas que conectam conteúdo, forma e experiência. A revista final revela o resultado e o processo que você construiu.</p><div class="actions"><button class="btn" id="download">Baixar roteiro completo</button><button class="btn" id="print">Imprimir ou salvar em PDF</button><a class="btn" href="#jornada">Rever as etapas</a></div><p id="completionCount" class="save-note"></p><p class="save-note">As marcações ficam apenas neste navegador. Não enviam atividades nem substituem a validação do professor.</p></section><footer class="footer"><span>Senac · Técnico em Design Gráfico · UC7</span><span>Rodrigo de Magalhães · Laboratório editorial</span><a href="../sobre-mim/">Consultar a atividade Sobre mim</a></footer></main><script>const DATA=[
+  {
+    "title": "Tema, público e linha editorial",
+    "kicker": "Que revista você quer colocar no mundo?",
+    "intro": "Uma revista começa com escolhas: o que merece ganhar suas páginas, com quem ela pretende conversar e qual olhar oferece sobre o assunto.",
+    "steps": [
+      [
+        "Escolha o tema e encontre um recorte",
+        [
+          "Defina tema, recorte, motivação e propósito: qual assunto irá explorar, por que o escolheu e o que deseja provocar no leitor?",
+          "Música é um tema amplo. Artistas independentes da sua cidade é um recorte que ajuda a definir matérias, imagens e leitores.",
+          "Investigue se terá acesso a informações, imagens e referências suficientes para desenvolver a publicação."
+        ]
+      ],
+      [
+        "Defina com quem sua revista conversa",
+        [
+          "Descreva os interesses, hábitos, conhecimentos e expectativas do público. Onde busca informações? O que faria essa pessoa escolher sua revista?",
+          "Escreva um parágrafo apresentando esse público. Vá além da faixa etária e evite descrições como “para todos”."
+        ]
+      ],
+      [
+        "Construa a linha editorial",
+        [
+          "Defina abordagem, tom de voz, assuntos prioritários e o que ficará fora da edição.",
+          "Escolha três palavras que representem a personalidade da revista e explique como aparecerão nos conteúdos.",
+          "Reúna essas escolhas em um texto de cinco a oito linhas."
+        ]
+      ],
+      [
+        "Teste sua proposta",
+        [
+          "Proponha três pautas: título provisório, descrição e possíveis fontes, pessoas para entrevistar ou materiais de consulta.",
+          "Indique três possibilidades de anunciantes, reais ou fictícios, relacionados ao tema e ao público. São o ponto de partida para as dez publicidades."
+        ]
+      ]
+    ],
+    "delivery": [
+      "Briefing editorial em uma ou duas páginas no InDesign: nome provisório; tema, recorte, motivação e propósito; público; linha editorial e três palavras de personalidade; três pautas; três possibilidades de anunciantes.",
+      "O briefing poderá ser ajustado após a conversa com o professor. A identidade visual será desenvolvida nas próximas etapas.",
+      "Para apresentar: “Minha revista se chama ___ e aborda ___, com foco em ___. Ela conversa com ___ e pretende ___, por meio de uma linguagem ___.”"
+    ],
+    "criteria": "Clareza do recorte, definição do público, coerência da linha editorial e viabilidade dos conteúdos."
+  },
+  {
+    "title": "Formato, conteúdo e espelho",
+    "kicker": "Antes de diagramar, planeje a edição.",
+    "intro": "Organize o percurso do leitor em 28 páginas, incluindo capa e contracapa. Dez páginas inteiras serão destinadas às publicidades; as outras 18 recebem os conteúdos editoriais e componentes.",
+    "steps": [
+      [
+        "Defina o formato",
+        [
+          "Registre dimensões fechadas em milímetros, orientação, justificativa, papéis e acabamento pretendidos.",
+          "O formato deverá ser validado pelo professor antes da configuração definitiva. Considere leitura, manuseio, aproveitamento do papel e viabilidade de impressão e montagem."
+        ]
+      ],
+      [
+        "Organize os conteúdos",
+        [
+          "Inclua capa, contracapa, sumário, expediente, editorial, página “Sobre mim”, pelo menos três matérias, espaço para o infográfico da UC8 e dez publicidades de página inteira.",
+          "Sumário, expediente e editorial podem compartilhar páginas com clareza e legibilidade. As matérias podem ocupar várias páginas.",
+          "Preveja fontes, créditos de imagens e identificação dos conteúdos utilizados."
+        ]
+      ],
+      [
+        "Construa o espelho",
+        [
+          "No InDesign, represente as 28 páginas em miniatura, identificadas de 1 a 28. Essa identificação de planejamento não determina a numeração visível final.",
+          "Indique conteúdo, seção ou título provisório, tipo de página e continuidade das matérias. Identifique Publicidade 01 a Publicidade 10 e acrescente o anunciante quando definido.",
+          "Cada publicidade ocupa uma página inteira. Anúncios menores não substituem essas dez páginas."
+        ]
+      ],
+      [
+        "Planeje o ritmo de leitura",
+        [
+          "Capa isolada; duplas 2–3, 4–5 e assim por diante; contracapa isolada. Observe onde cada matéria começa, as duplas necessárias e a distribuição das publicidades.",
+          "Varie texto, imagens e respiros. Confira a correspondência do sumário. Use cores para distinguir tipos de conteúdo."
+        ]
+      ],
+      [
+        "Confira a viabilidade",
+        [
+          "Confirme 28 páginas, dez publicidades inteiras e todos os conteúdos nas outras 18 páginas.",
+          "Compare o espaço previsto com a quantidade de texto e imagens. Reserve o infográfico. O espelho poderá mudar, preservando a extensão e os conteúdos exigidos."
+        ]
+      ]
+    ],
+    "delivery": [
+      "PDF produzido no InDesign e arquivo editável com ficha de formato e produção, lista dos conteúdos e espelho completo com legenda e dez publicidades identificadas."
+    ],
+    "criteria": "Viabilidade do formato, distribuição dos conteúdos, componentes obrigatórios, planejamento das publicidades e sequência de leitura."
+  },
+  {
+    "title": "Grid system e páginas-mestre",
+    "kicker": "Uma estrutura, muitas possibilidades.",
+    "intro": "Construa um sistema que dê unidade à revista e permita variar textos, imagens e espaços em branco. Explore seis páginas duplas com composições diferentes.",
+    "steps": [
+      [
+        "Construa o grid",
+        [
+          "Use o formato validado e páginas opostas. Defina margens superior, inferior, interna e externa; número de colunas e intervalos; divisões horizontais e áreas recorrentes.",
+          "Experimente combinar colunas e módulos. Em seis colunas, um texto pode ocupar duas ou três e uma imagem quatro ou seis.",
+          "Registre medidas e justificativa. Considere a margem interna e o espaço de leitura após a montagem."
+        ]
+      ],
+      [
+        "Configure as páginas-mestre",
+        [
+          "Também chamadas de páginas principais em algumas versões do InDesign. Configure guias, marcadores automáticos de numeração e elementos de identificação.",
+          "Considere esquerda e direita. Crie uma base e variações necessárias para aberturas ou publicidades. Aplique e confira o funcionamento."
+        ]
+      ],
+      [
+        "Explore seis páginas duplas",
+        [
+          "1. Abertura: título, linha de apoio e imagem de destaque.",
+          "2. Leitura prolongada: mais texto, continuidade e conforto de leitura.",
+          "3. Imagem dominante: protagonismo da imagem e textos de apoio.",
+          "4. Sequência visual: várias imagens com legendas e ordem de leitura.",
+          "5. Informação em destaque: citação, dado ou trecho relevante.",
+          "6. Experimental: assimetria, escala e espaços em branco relacionados ao grid.",
+          "Use conteúdos da revista, textos provisórios e blocos de cor para imagens. Varie combinações e proporções; cada dupla deve apresentar uma solução própria. Utilize extensões de texto próximas das reais."
+        ]
+      ],
+      [
+        "Teste o sistema",
+        [
+          "Confira alinhamentos, variedade, hierarquia, espaços em branco, relação entre textos e imagens e interferência da dobra.",
+          "Ajuste o grid conforme os testes. A tipografia será aprofundada na Parte 4."
+        ]
+      ],
+      [
+        "Apresente seu grid system",
+        [
+          "Monte uma prancha no InDesign com estrutura-base e medidas, miniaturas das seis duplas sem guias, uma aplicação comentada com grid sobreposto e identificação das páginas-mestre.",
+          "Inclua um parágrafo justificando a relação com o tema, o público e a leitura. Garanta legibilidade na apresentação."
+        ]
+      ]
+    ],
+    "delivery": [
+      "Arquivo editável com seis páginas duplas e páginas-mestre configuradas.",
+      "PDF das seis duplas exportado em páginas espelhadas e PDF da prancha de apresentação.",
+      "As 12 páginas de experimentação não aumentam a extensão da revista: soluções poderão ser adaptadas à edição final de 28 páginas."
+    ],
+    "criteria": "Alinhamentos, variedade, hierarquia, espaços em branco, funcionamento das páginas-mestre e adequação editorial."
+  },
+  {
+    "title": "Sistema tipográfico e matéria-piloto",
+    "kicker": "A voz da revista também está nas letras.",
+    "intro": "Defina a hierarquia tipográfica, organize estilos no InDesign e teste suas escolhas em uma matéria-piloto.",
+    "steps": [
+      [
+        "Escolha as famílias",
+        [
+          "Parta de uma ou duas famílias e explore pesos e variações. Outras escolhas exigem justificativa editorial.",
+          "Avalie personalidade, legibilidade, acentos do português, pesos, itálicos e permissão de uso. Teste títulos e textos reais nas larguras escolhidas."
+        ]
+      ],
+      [
+        "Defina a hierarquia",
+        [
+          "Preveja seção, título, subtítulo ou linha de apoio, autoria, corpo, intertítulo, citação, legenda, crédito e fonte.",
+          "Defina família, peso, tamanho, entrelinha, cor, alinhamento e espaçamentos. Observe as relações entre tamanho, peso, posição e espaço."
+        ]
+      ],
+      [
+        "Crie estilos de parágrafo",
+        [
+          "Nomeie claramente os estilos e configure fonte, peso, tamanho, entrelinha, alinhamento, recuos, espaços antes e depois, hifenização e justificação.",
+          "Use opções de manutenção para títulos e linhas isoladas. Avalie a grade de linha de base. Explore “Baseado em” para estilos relacionados.",
+          "Organize espaços pelos estilos, evitando linhas vazias e sequências de espaços ou tabulações para posicionar textos."
+        ]
+      ],
+      [
+        "Crie estilos de caractere",
+        [
+          "Configure ênfase em itálico, negrito ou outros tratamentos pontuais necessários.",
+          "Defina apenas os atributos que precisam mudar. O estilo de parágrafo permanece responsável pela estrutura geral."
+        ]
+      ],
+      [
+        "Diagrame a matéria-piloto",
+        [
+          "Escolha uma pauta e desenvolva pelo menos uma página dupla com grid, páginas-mestre, título, linha de apoio, autoria e corpo.",
+          "Inclua pelo menos um intertítulo, uma citação ou destaque e imagens com legendas e créditos. Aplique os estilos criados.",
+          "Use texto com sentido, revisado e com fontes registradas. Trate fotografias no Photoshop e vincule-as ao InDesign. Vetores podem ser integrados quando contribuírem. A matéria pode integrar a edição final."
+        ]
+      ],
+      [
+        "Teste e padronize",
+        [
+          "Examine um PDF no tamanho real e, quando possível, uma prova impressa. Confira leitura, largura de coluna, entrelinha, hierarquia, espaçamentos, hifenizações, linhas isoladas e texto excedente.",
+          "Altere uma característica de um estilo e verifique a atualização de todas as ocorrências. Mantenha a melhor configuração. Revise substituições locais e incorpore aos estilos as mudanças recorrentes."
+        ]
+      ]
+    ],
+    "delivery": [
+      "INDD com estilos nomeados, organizados e aplicados.",
+      "PDF da matéria-piloto em páginas duplas.",
+      "Ficha tipográfica no InDesign com amostras, configurações e justificativa.",
+      "Arquivos de imagem, versões tratadas e vínculos."
+    ],
+    "criteria": "Adequação tipográfica, hierarquia, conforto de leitura, configuração dos estilos, integração ao grid e organização."
+  },
+  {
+    "title": "Capa e organização da edição",
+    "kicker": "O primeiro encontro com o leitor.",
+    "intro": "Desenvolva capa, contracapa, chamadas, sumário, expediente e editorial com a identidade construída nas etapas anteriores.",
+    "steps": [
+      [
+        "Desenvolva duas propostas de capa",
+        [
+          "Inclua nome da revista, edição e data, imagem ou composição principal, chamada principal e pelo menos duas chamadas secundárias.",
+          "As chamadas devem corresponder às matérias. Explore hierarquia e relação entre nome, imagem e texto.",
+          "Apresente duas propostas com mudanças de composição, hierarquia ou relação texto–imagem. Desenvolva a selecionada com o professor.",
+          "Trate fotografias no Photoshop e produza vetores no Illustrator conforme a proposta. Integre por vínculos no InDesign."
+        ]
+      ],
+      [
+        "Escreva as chamadas",
+        [
+          "Relacione cada chamada a uma pauta. Use frases curtas, específicas e adequadas ao espaço. Confira se a promessa é atendida pelo conteúdo.",
+          "A chamada pode diferir do título interno, mantendo a relação com o assunto."
+        ]
+      ],
+      [
+        "Planeje a contracapa",
+        [
+          "Pode conter composição de encerramento, conteúdo visual, mensagem editorial ou publicidade de página inteira.",
+          "Se for publicidade, conta entre as dez obrigatórias. Considere a relação visual com a capa."
+        ]
+      ],
+      [
+        "Organize o sumário",
+        [
+          "Inclua seções, títulos e páginas iniciais com hierarquia clara. Imagens e descrições podem ajudar a orientação.",
+          "Explore o sumário automático a partir dos estilos de parágrafo no InDesign. Defina entradas e apresentação. Atualize e confira após mudanças de paginação."
+        ]
+      ],
+      [
+        "Construa o expediente",
+        [
+          "Identifique revista, edição, data, projeto editorial, direção de arte, diagramação, textos, fotografia, ilustração e colaborações reais.",
+          "Inclua curso, instituição e identificação dos professores. Seu nome poderá constar em várias funções. Reconheça contribuições dos colegas.",
+          "O expediente complementa os créditos e as referências necessários junto aos conteúdos."
+        ]
+      ],
+      [
+        "Escreva o editorial",
+        [
+          "Escreva aproximadamente 120 a 180 palavras com título e assinatura. Apresente tema, recorte, conexão entre conteúdos, relevância e um convite à leitura.",
+          "Use o tom editorial. O editorial apresenta a edição; “Sobre mim” apresenta sua trajetória e seu olhar.",
+          "IA pode apoiar a escrita a partir das suas ideias. Revise os fatos e ajuste a linguagem à sua intenção."
+        ]
+      ],
+      [
+        "Integre à edição",
+        [
+          "Mantenha 28 páginas e dez publicidades inteiras. Sumário, expediente e editorial podem compartilhar páginas com clareza.",
+          "Aplique grid, páginas-mestre e estilos. Atualize o espelho. Confira se capa, sumário e editorial correspondem aos conteúdos internos."
+        ]
+      ]
+    ],
+    "delivery": [
+      "PDF com duas propostas de capa, versão escolhida e justificativa.",
+      "PDF da capa final, contracapa, sumário, expediente e editorial.",
+      "INDD com os componentes integrados e vínculos organizados. Espelho atualizado se houver mudanças."
+    ],
+    "criteria": "Relação com tema e público, hierarquia, clareza das chamadas, sumário, identificação das participações, editorial e unidade visual."
+  },
+  {
+    "title": "Revisão, prova e impressão",
+    "kicker": "Da tela ao papel.",
+    "intro": "Revise conteúdo e diagramação, produza uma prova, corrija problemas e prepare os arquivos finais para impressão.",
+    "steps": [
+      [
+        "Confira a edição completa",
+        [
+          "Confirme 28 páginas incluindo capa e contracapa; dez publicidades inteiras; sumário, expediente, editorial, Sobre mim e pelo menos três matérias.",
+          "Integre o infográfico conforme o andamento da UC8. Confira fontes, créditos e professores no expediente. Contracapa publicitária conta entre os dez anúncios.",
+          "Compare com o espelho. A versão enviada à impressão deverá conter todos os conteúdos, sem materiais provisórios."
+        ]
+      ],
+      [
+        "Revise o conteúdo",
+        [
+          "Confira ortografia, pontuação, concordância, clareza, repetições, nomes, datas, dados, legendas, créditos e referências.",
+          "Verifique chamadas, sumário, matérias, tom de voz e informações das publicidades. Confira também fatos de textos apoiados por IA.",
+          "Troque com um colega para leitura crítica. Registre sugestões e decida os ajustes com o professor."
+        ]
+      ],
+      [
+        "Revise a diagramação",
+        [
+          "Confira grid, margens, estilos, hierarquia, espaçamentos, hifenizações, linhas isoladas, fluxo de texto, imagens, numeração e páginas-mestre.",
+          "Examine duplas, corte e dobra. Atualize o sumário e confira novamente."
+        ]
+      ],
+      [
+        "Faça a conferência técnica",
+        [
+          "Use Vínculos e Comprovação/Preflight: confira texto excedente, fontes, caracteres, vínculos, resolução efetiva, sangria, segurança, cores, perfis e transparências.",
+          "Valide com o professor sangria, perfil de cor, resolução, padrão PDF e marcas de corte conforme a produção.",
+          "Corrija imagens no Photoshop e vetores no Illustrator; atualize os vínculos no InDesign."
+        ]
+      ],
+      [
+        "Produza uma prova e ajuste",
+        [
+          "Prepare prova impressa ou boneco conforme combinado. Avalie formato, manuseio, sequência, orientação, leitura, imagens, margens, dobra e acabamento.",
+          "Se a prova for reduzida, imprima páginas representativas no tamanho real. Considere os limites da impressora ao avaliar cores.",
+          "Registre problemas por página. Corrija, atualize vínculos e sumário, execute nova conferência e exporte. Valide a versão corrigida com o professor."
+        ]
+      ],
+      [
+        "Exporte para impressão",
+        [
+          "Exporte as 28 páginas, com sangria, marcas, cor e qualidade validadas e fontes incorporadas quando permitido.",
+          "Use páginas individuais em ordem de leitura, salvo orientação específica da gráfica. A imposição seguirá orientação do professor ou da gráfica.",
+          "Abra o PDF final e confira todas as páginas, dimensões, textos, imagens e fontes."
+        ]
+      ],
+      [
+        "Organize o pacote",
+        [
+          "Use Empacotar e inclua INDD, IDML e vínculos. Organize PDF final, projeto, arquivos Photoshop/Illustrator e provas.",
+          "Compartilhe fontes somente quando a licença permitir; informe nome e origem quando necessário. Identifique aluno, revista e versão nos nomes dos arquivos."
+        ]
+      ]
+    ],
+    "delivery": [
+      "PDF final para impressão com 28 páginas e configurações validadas.",
+      "Pacote INDD, IDML e vínculos; editáveis de Photoshop e Illustrator.",
+      "Prova ou fotos do boneco e registro das correções.",
+      "Ficha de produção: formato fechado, páginas, papéis, acabamento e especificações de exportação. Guarde a versão aprovada para adaptação digital."
+    ],
+    "criteria": "Revisão, integridade dos conteúdos, consistência visual, correções técnicas, uso da prova e organização dos arquivos."
+  },
+  {
+    "title": "Digital e apresentação final",
+    "kicker": "Uma revista para explorar na tela.",
+    "intro": "Adapte a edição para leitura em tela, desenvolva navegação e recursos interativos e apresente o resultado do projeto.",
+    "steps": [
+      [
+        "Prepare a versão digital",
+        [
+          "Crie uma cópia identificada como versão digital. Mantenha conteúdos, 28 páginas e dez publicidades.",
+          "Ajuste leitura, contraste, visualização de páginas e duplas, áreas clicáveis, imagens e tamanho do arquivo. Preserve a identidade, os estilos e as páginas-mestre."
+        ]
+      ],
+      [
+        "Construa a navegação",
+        [
+          "Configure sumário clicável, retorno ao sumário nas páginas de conteúdo e marcadores das principais seções no PDF.",
+          "Se usar avançar/voltar, mantenha posição e aparência consistentes. Explore Hiperlinks, Marcadores e Botões e formulários. Confira áreas clicáveis e destinos."
+        ]
+      ],
+      [
+        "Inclua recursos interativos",
+        [
+          "Além da navegação, inclua pelo menos três links de conteúdo: fontes, artistas, instituições, vídeos, áudios, materiais complementares ou conteúdos das publicidades.",
+          "Identifique a finalidade dos links. Outros recursos, como botões, animações e sequências de imagens, podem ser explorados.",
+          "Teste compatibilidade com o formato e o aplicativo escolhidos. Use links externos quando necessário."
+        ]
+      ],
+      [
+        "Exporte PDF interativo e EPUB fixo",
+        [
+          "PDF: preserve links, marcadores e navegação, sem marcas de impressão. Equilibre qualidade e tamanho; defina apresentação inicial adequada.",
+          "EPUB de layout fixo: preserve composição, configure ordem e navegação e inclua título, autoria, idioma e capa nos metadados.",
+          "Exporte e teste as duas versões. Registre diferenças de funcionamento."
+        ]
+      ],
+      [
+        "Teste a leitura",
+        [
+          "Abra em aplicativos compatíveis além da visualização do InDesign. Confira páginas, legibilidade, imagens, sumário, retorno, links, ordem e áreas clicáveis.",
+          "Peça a um colega que encontre uma matéria, volte ao sumário e acesse um complemento. Corrija dificuldades.",
+          "Registre arquivo, aplicativo, dispositivo, problemas e correções."
+        ]
+      ],
+      [
+        "Apresente em cinco a sete minutos",
+        [
+          "Mostre proposta editorial; formato, grid, tipografia e páginas-mestre; matéria-piloto, Sobre mim e publicidades.",
+          "Explique a integração entre Photoshop, Illustrator e InDesign, os ajustes revelados pela prova e a experiência digital.",
+          "Relate uma dificuldade, uma solução e um aprimoramento possível. Compare uma versão inicial e final para justificar uma decisão."
+        ]
+      ]
+    ],
+    "delivery": [
+      "PDF interativo e EPUB de layout fixo.",
+      "Arquivo editável digital com vínculos e registro dos testes.",
+      "Dossiê em PDF com definições editoriais, espelho, grid, tipografia, capas, prova e ajustes.",
+      "Apresentação final à turma. Organize separadamente as versões para impressão e digital, preservando editáveis e materiais."
+    ],
+    "criteria": "Leitura em tela, navegação, pertinência e funcionamento das interações, organização do processo e justificativa das decisões."
+  }
+];
+const parts=DATA;
+const $=s=>document.querySelector(s);
+const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+const nav=parts.map((p,i)=>`<a href="#parte-${i+1}"><span>0${i+1}</span> ${p.title}</a>`).join('');
+$('#chapters').innerHTML=nav;$('#mobileMenu').innerHTML=nav;
+const mini=(n)=>`<div class="spread sample s${n}"><div class="leaf"><b>OLHAR<br>EDITORIAL.</b><i></i><em></em><small>${String(n*2).padStart(2,'0')}</small></div><div class="leaf"><i></i><em></em><em></em><small>${String(n*2+1).padStart(2,'0')}</small></div></div>`;
+const special=i=>i===1?`<div class="map-demo"><div class="demo-head"><h3>28 páginas.<br>Um percurso.</h3><p>Exemplo de distribuição. Os blocos vermelhos representam as dez publicidades. Seu espelho poderá ter outra organização.</p></div><div class="page-map">${Array.from({length:28},(_,j)=>`<div class="page-tile ${[3,6,9,12,15,18,21,24,26,27].includes(j)?'ad':''}"><b>${String(j+1).padStart(2,'0')}</b><span>${j===0?'Capa':[3,6,9,12,15,18,21,24,26,27].includes(j)?'Publicidade':j===27?'Contracapa':'Editorial'}</span></div>`).join('')}</div><p class="caption">Neste exemplo, a contracapa é uma publicidade e está incluída nas dez.</p></div>`:i===2?`<div class="grid-demo"><div class="demo-head"><h3>O grid permanece.<br>A composição muda.</h3><button class="btn" id="gridToggle" aria-pressed="false">Mostrar grid</button></div><div class="samples">${Array.from({length:6},(_,j)=>`<figure>${mini(j+1)}<figcaption>${['Abertura','Leitura prolongada','Imagem dominante','Sequência visual','Destaque','Experimental'][j]}</figcaption></figure>`).join('')}</div><p class="caption">Estudos esquemáticos de composição. As seis duplas da atividade deverão explorar o seu sistema editorial.</p></div>`:i===3?`<div class="type-demo"><span class="label">Um sistema que responde junto</span><div class="type-preview"><h3 id="typeTitle">Cada letra<br>tem uma função.</h3><p>Uma hierarquia consistente conduz o olhar. Os estilos permitem aplicar decisões e atualizar a revista com controle.</p><blockquote>“A forma também conta a história.”</blockquote></div><label for="weight">Experimente o peso do título</label><input type="range" id="weight" min="100" max="900" step="100" value="700"><p class="caption">Demonstração visual de hierarquia. A configuração dos estilos será feita no InDesign.</p></div>`:i===4?`<div class="mockup-scene"><div class="magazine"><div class="mag-page left"><span class="tiny">Sua revista · sua direção</span><h3>O mundo<br>pelo seu<br><i>olhar.</i></h3><p>Tema, imagem e palavra construindo uma identidade.</p></div><div class="cover-demo"><span>EDIÇÃO AUTORAL</span><strong>REV<br>ISTA.</strong><div></div><p>Uma ideia.<br>Muitas páginas.</p></div></div></div>`:i===5?`<div class="proof-flow"><span>REVISAR</span><b>+</b><span>PROVAR</span><b>+</b><span>AJUSTAR</span><b>=</b><span class="red">FECHAR</span></div>`:i===6?`<div class="digital-demo"><span class="label">Experimente a navegação</span><h3>O conteúdo<br>também é caminho.</h3><div class="actions"><a class="btn solid" href="#parte-2">Ir ao espelho</a><a class="btn" href="#jornada">Voltar à jornada</a></div><p class="caption">Na sua revista, esses percursos serão construídos com links e recursos compatíveis com o formato final.</p></div>`:'';
+$('#parts').innerHTML=parts.map((p,i)=>`<section id="parte-${i+1}" class="chapter ${i%2===0?'paper':''}" data-nav><header class="chapter-head"><span class="chapter-number">0${i+1}</span><div><p class="label ${i%2===0?'red':''}">Parte ${i+1} · ${esc(p.kicker)}</p><h2>${esc(p.title)}</h2><p class="lede">${esc(p.intro)}</p></div></header>${special(i)}<div class="chapter-body"><div class="sticky-note"><span class="label red">Roteiro de produção</span><h3>Da intenção<br>à aplicação.</h3><p>Textos, imagens e publicidades continuam sendo produzidos durante esta etapa.</p><a href="#entrega-${i+1}" class="btn">Ver a entrega</a></div><div class="instructions">${p.steps.map((s,j)=>`<article class="instruction reveal-up"><span class="step-label">${String(j+1).padStart(2,'0')} / ${String(p.steps.length).padStart(2,'0')}</span><h3>${esc(s[0])}</h3><ul>${s[1].map(t=>`<li>${esc(t)}</li>`).join('')}</ul></article>`).join('')}</div></div><div class="delivery-block" id="entrega-${i+1}"><div><p class="label">Entrega da etapa</p><h3>O que apresentar.</h3></div><div><ul>${p.delivery.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p class="criteria"><strong>Critérios de avaliação</strong><br>${esc(p.criteria)}</p><label class="completion"><input type="checkbox" data-check="${i}"> Marcar esta etapa como organizada neste dispositivo</label></div></div><div class="chapter-end"><span>Parte ${i+1} de 7</span><a class="btn" href="${i===6?'#final':'#parte-'+(i+2)}">${i===6?'Concluir o percurso':'Próxima parte'}</a></div></section>`).join('');
+$('#journeyList').innerHTML=parts.map((p,i)=>`<a href="#parte-${i+1}"><span>0${i+1}</span><strong>${p.title}</strong><small>Conhecer a etapa</small></a>`).join('');
+let reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+try{reduced=JSON.parse(localStorage.getItem('revista-motion'))??reduced}catch{}
+function motion(){document.body.classList.toggle('no-motion',reduced);document.querySelectorAll('[data-motion]').forEach(b=>{b.setAttribute('aria-pressed',String(reduced));b.textContent=reduced?'Ativar animações':'Reduzir movimento'});update()}
+document.querySelectorAll('[data-motion]').forEach(b=>b.onclick=()=>{reduced=!reduced;try{localStorage.setItem('revista-motion',JSON.stringify(reduced))}catch{}motion()});
+const words=$('#manifestText').textContent.split(' ');$('#manifestText').innerHTML=words.map(w=>`<span class="word">${w}</span>`).join(' ');
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('shown')}),{threshold:.08});document.querySelectorAll('.reveal-up').forEach(e=>obs.observe(e));
+let ticking=false;function update(){const max=document.documentElement.scrollHeight-innerHeight;$('#progressFill').style.transform=`scaleX(${max>0?scrollY/max:0})`;const r=$('#proposta').getBoundingClientRect(),v=Math.max(0,Math.min(1,-r.top/(r.height-innerHeight)));document.querySelectorAll('.word').forEach((e,i)=>e.classList.toggle('on',reduced||i/words.length<v*1.3+.05));const section=[...document.querySelectorAll('[data-nav]')].reverse().find(s=>s.getBoundingClientRect().top<innerHeight*.4);document.querySelectorAll('#chapters a').forEach(a=>{const active=a.hash==='#'+section?.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});const g=$('.magazine');if(g&&!reduced){const q=g.getBoundingClientRect();g.style.transform=`rotateX(${Math.max(0,Math.min(15,(q.top/innerHeight)*15))}deg) rotateZ(-5deg)`}ticking=false}
+addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true}},{passive:true});addEventListener('resize',update);
+$('#menuButton').onclick=()=>{const open=$('#mobileMenu').classList.toggle('open');$('#menuButton').setAttribute('aria-expanded',String(open))};$('#mobileMenu').querySelectorAll('a').forEach(a=>a.onclick=()=>{$('#mobileMenu').classList.remove('open');$('#menuButton').setAttribute('aria-expanded','false')});
+$('#gridToggle').onclick=()=>{const state=$('.samples').classList.toggle('guides');$('#gridToggle').setAttribute('aria-pressed',String(state));$('#gridToggle').textContent=state?'Ocultar grid':'Mostrar grid'};
+$('#weight').oninput=e=>$('#typeTitle').style.fontWeight=e.target.value;
+document.querySelectorAll('[data-check]').forEach(c=>{try{c.checked=localStorage.getItem('revista-check-'+c.dataset.check)==='true'}catch{}c.onchange=()=>{try{localStorage.setItem('revista-check-'+c.dataset.check,String(c.checked))}catch{}completion()}});
+function completion(){const n=document.querySelectorAll('[data-check]:checked').length;$('#completionCount').textContent=`${n} de 7 etapas organizadas`;}
+$('#print').onclick=()=>print();$('#download').onclick=()=>{const text='PROJETO REVISTA — UC7\n28 páginas · 10 publicidades de página inteira\nTextos e publicidades são produzidos desde o início.\n\n'+parts.map((p,i)=>`PARTE ${i+1} — ${p.title}\n${p.intro}\n\n`+p.steps.map(s=>s[0]+'\n'+s[1].map(t=>'• '+t).join('\n')).join('\n\n')+'\n\nENTREGA\n'+p.delivery.join('\n')+'\n\nCRITÉRIOS\n'+p.criteria).join('\n\n________________________\n\n');const u=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download='Projeto-revista-UC7-roteiro.txt';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};motion();completion();
+</script></body></html>
